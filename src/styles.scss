@@ -6,6 +6,8 @@
     --secondary: #d79930;
     --yellow-text: #febb25;
     --light-text: #fff;
+    --section-title:#0B1131;
+    --section-text:#A0ABB8;
 }
 
 // Fonts
@@ -34,4 +36,39 @@ button.btn-outline {
 button.btn-outline:hover {
     background-color: #fff;
     color:var(--secondary);
+}
+
+
+
+// Section
+.section-header{
+    color:var(--secondary);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.section-title{
+    color:var(--section-title);
+    font-size: 48px;
+    line-height: 68px;
+    font-weight: bold;
+    margin-top: -30px;
+}
+
+.section-text{
+    color:var(--section-text);
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+
+// Responsive -> Desktop
+@media only screen and (min-width: 960px) {
+    section {
+        padding: 150px;
+    }
+
+
 }
