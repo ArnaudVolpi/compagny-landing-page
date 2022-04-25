@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+
+// Global Variables
+:root {
+    --primary: #064635;
+    --secondary: #d79930;
+    --yellow-text: #febb25;
+    --light-text: #fff;
+}
+
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+// Common SCSS
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+
+// Button
+button:hover{
+    cursor: pointer;
+}
+
+// BTN OUTLINE
+button.btn-outline {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+button.btn-outline:hover {
+    background-color: #fff;
+    color:var(--secondary);
+}

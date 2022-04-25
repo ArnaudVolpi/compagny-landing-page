@@ -1,0 +1,36 @@
+<section fxLayout="column" fxLayoutAlign="center" fxLayoutGap="10px">
+
+    <div fxLayout="row" fxLayoutAlign="space-around center" fxLayoutAlign.gt-sm="start center">
+
+        <!-- Block Left -->
+        <div fxLayout="column wrap" fxLayoutAlign="start start" fxFlex fxFlex.gt-sm="65" fxLayoutGap.gt-sm="20px">
+            <!-- Title -->
+            <h1>L’agence qui <br>vous accompagne<br> pour <ng-container
+                    *ngFor="let item of textFadeOptions;let i=index">
+                    <span class="text-fade" [ngClass]="{'text-fade-active': i==countTextFade}">
+                        {{item}}</span>
+                </ng-container>
+            </h1>
+            <!-- Subtext -->
+            <div fxLayout="row" fxLayoutAlign="end center">
+                <p>Création d’application web, développement d’outils digitaux et d’applications mobiles, nous
+                    accompagnons
+                    les professionnels qui désirent gagner en visilité, prroductivité et efficacité.</p>
+            </div>
+            <!-- Btn -->
+            <button>Notre Agence</button>
+        </div>
+
+        <!-- Block Right -->
+        <div fxHide fxShow.gt-sm fxFlex="35" fxLayout="row" fxLayoutAlign="flex-end center">
+            <!-- Logo -->
+            <img src="assets/logo/logo.svg" alt="logo" width="50%">
+        </div>
+
+
+    </div>
+
+
+
+
+</section>
