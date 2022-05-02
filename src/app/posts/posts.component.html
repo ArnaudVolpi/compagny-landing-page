@@ -1,0 +1,25 @@
+<section fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+    <h6 class="section-header">News</h6>
+    <br>
+    <h1 class="section-title text-center">Dernières actualités</h1>
+    <br>
+
+    <!-- Card  -->
+    <div fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="60px" fxLayout.gt-sm="row"
+        fxLayoutAlign.gt-sm="center center" class="card-container">
+
+
+        <ng-container *ngFor="let post of posts">
+            <div class="card" fxLayout="column" fxLayoutAlign="center center" fxFlex="90" fxFlex.gt-sm="28">
+                <div class="img-card" [style.background]="'url(' + post.img + ')'"></div>
+                <div class="card-body" fxLayout="column" fxLayoutAlign="space-between start">
+                    <span>{{post.date}}</span>
+                    <h1>{{post.title}}</h1>
+                    <p>{{post.text}}</p>
+                    <button class="btn-primary">Lire l'article</button>
+                </div>
+            </div>
+        </ng-container>
+
+    </div>
+</section>

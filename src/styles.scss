@@ -48,6 +48,10 @@ button.btn-outline:hover {
 
 
 // Section
+
+section{
+    min-height: 100vh;
+}
 .section-header{
     color:var(--secondary);
     font-size: 24px;
@@ -69,6 +73,22 @@ button.btn-outline:hover {
     font-weight: 400;
     text-align: justify;
 }
+
+// Button
+    button {
+        background-color: var(--secondary);
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        color: var(--light-text);
+        border-radius: 4px;
+        width: 150px;
+        padding: 10px 20px;
+        border: none;
+    }
+    button.btn-primary
+    {
+        background-color: var(--primary);
+    }
 
 
 // Responsive -> Desktop
