@@ -8,6 +8,11 @@
     --light-text: #fff;
     --section-title:#0B1131;
     --section-text:#A0ABB8;
+
+    --card-secondary:#306844;
+    --card-secondary-text:#fff;
+    --card-third:#064635;
+    --card-third-text:#fff;
 }
 
 // Fonts
@@ -19,7 +24,9 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-
+.text-center{
+    text-align: center;
+}
 
 
 // Button
