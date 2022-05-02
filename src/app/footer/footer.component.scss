@@ -1,0 +1,27 @@
+footer{
+    padding: 20px;
+    a{
+        color: var(--section-title);
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        margin: 10px 0px;
+    }
+
+    p,.sub-footer a{
+        color: var(--section-text);
+    }
+}
+
+// Responsive -> Desktop
+@media only screen and (min-width: 960px) {
+
+    footer{
+        padding: 20px 150px;
+  
+    .links {
+     margin-top: 30px;
+    }
+}
+
+}

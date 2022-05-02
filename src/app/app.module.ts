@@ -12,6 +12,7 @@ import { CustomComponent } from './custom/custom.component';
 import { AtoutsComponent } from './atouts/atouts.component';
 import { PostsComponent } from './posts/posts.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ContactComponent } from './contact/contact.component';
     CustomComponent,
     AtoutsComponent,
     PostsComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
