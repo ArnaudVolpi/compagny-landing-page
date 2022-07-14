@@ -1,9 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
 
+@font-face {
+    font-family: "Gilroy";
+    font-weight: 500;
+    src: url("assets/fonts/gilroy/Gilroy-Medium.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Gilroy";
+    font-weight: 600;
+    src: url("assets/fonts/gilroy/Gilroy-SemiBold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Gilroy";
+    font-weight: bold;
+    src: url("assets/fonts/gilroy/Gilroy-Bold.ttf") format("truetype");
+}
+
 // Global Variables
-:root {
+/*:root {
     --primary: #064635;
-    --secondary: #d79930;
+    --secondary: #8A2BE2;
     --yellow-text: #febb25;
     --light-text: #fff;
     --section-title:#0B1131;
@@ -14,23 +30,47 @@
     --card-third:#064635;
     --card-third-text:#fff;
 }
+*/
+:root {
+    --primary: #3029d9; //#361FDB;//#090d4e;
+    --secondary: #5975ff;
+    --thirdary: #111849;
+    --yellow-text: #8a2be2;
+    --grey-text: #97979d;
+    --light-text: #fff;
+    --dark-text: #0b1131;
+    --section-title: #0b1131;
+    --section-text: #333;
+
+    --card-secondary: #3029d9;
+    --card-secondary-text: #fff;
+    --card-third: #111849;
+    --card-third-text: #fff;
+}
 
 // Fonts
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 // Common SCSS
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
 body {
     margin: 0;
-    font-family: "Poppins", sans-serif;
+    // font-family: "Poppins", sans-serif;
+    font-family: "Gilroy", sans-serif;
+
+    color: #333;
+    font-size: 16px;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
-
 // Button
-button:hover{
+button:hover {
     cursor: pointer;
 }
 
@@ -42,60 +82,107 @@ button.btn-outline {
 
 button.btn-outline:hover {
     background-color: #fff;
-    color:var(--secondary);
+    color: var(--secondary);
 }
-
-
 
 // Section
 
-section{
-    min-height: 100vh;
+section {
+    // min-height: 100vh;
 }
-.section-header{
-    color:var(--secondary);
+.section-header {
+    color: var(--primary);
     font-size: 24px;
     font-weight: 600;
+    margin-bottom: 30px;
 }
 
-.section-title{
-    color:var(--section-title);
+.section-title {
+    color: var(--section-title);
     font-size: 48px;
     line-height: 68px;
     font-weight: bold;
     margin-top: -30px;
+    margin-bottom: 0px;
 }
 
-.section-text{
-    color:var(--section-text);
-    font-size: 14px;
+.section-text {
+    color: var(--section-text);
+    font-size: 16px;
     line-height: 28px;
     font-weight: 400;
     text-align: justify;
 }
 
 // Button
-    button {
-        background-color: var(--secondary);
-        font-family: "Poppins", sans-serif;
-        font-weight: 500;
-        color: var(--light-text);
-        border-radius: 4px;
-        width: 150px;
-        padding: 10px 20px;
-        border: none;
-    }
-    button.btn-primary
-    {
-        background-color: var(--primary);
-    }
+button.btn {
+    background-color: var(--secondary);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: var(--light-text);
+    border-radius: 4px;
+    width: 150px;
+    padding: 10px 20px;
+    border: none;
+}
+button.btn-primary {
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    color: #fff !important;
+}
+button.btn-secondary {
+    background-color: var(--secondary);
+}
+button.btn-thirdary {
+    background-color: var(--thirdary);
+    color: #fff !important;
+}
 
+button.btnV2 {
+    padding: 15px 25px;
+    font-family: "Gilroy", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+button.btnV2 a {
+    text-decoration: none;
+    color: inherit;
+}
+button.btnV2XL {
+    padding: 20px 40px;
+    font-weight: 600;
+    font-size: 17px;
+    min-width: 200px;
+}
+button.btnV2-outline {
+    background-color: transparent;
+    border: 2px solid #0000001f;
+    color: var(--primary);
+}
+button.btnV2-outline:hover {
+    background-color: var(--primary);
+    transition: background-color 0.5s ease;
+    color: #fff;
+}
+button.btnV2-rounded {
+    border-radius: 40px;
+}
+
+// IMG
+.img-rounded {
+    border-radius: 15px;
+}
+.image-square {
+    background-position: center;
+    background-size: cover;
+}
 
 // Responsive -> Desktop
 @media only screen and (min-width: 960px) {
     section {
-        padding: 150px;
+        padding: 150px 200px;
     }
-
-
+    .py-0 {
+        padding: 0px 200px;
+    }
 }

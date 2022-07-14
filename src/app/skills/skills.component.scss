@@ -1,4 +1,4 @@
-.card{
+.card {
     box-shadow: 0px 10px 100px 10px rgb(0 0 0 / 10%);
 
     border-radius: 8px;
@@ -7,50 +7,49 @@
     background-image: url("/assets/img/skills/bg-effectV2.svg");
     background-position: left bottom;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     margin: 20px 0px;
 
-    .card-body{
-        
-    margin: 20px 30px;
+    .card-body {
+        margin: 20px 30px;
 
-    img {
-        width: 88px;
-        height: 88px;
-    }
+        img {
+            width: 88px;
+            height: 88px;
+        }
 
-     span {
-        margin-top: 10px;
-    }
-    
-    h1,
-    p,
-    span {
-        color: #0B1131;
-    }
-    
-    h1 {
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 0px;
-    }
-    
-    p {
-        font-size: 14px;
-        font-weight: 400;
-    }
+        span {
+            margin-top: 10px;
+        }
+
+        h1,
+        p,
+        span {
+            color: #0b1131;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 0px;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 400;
+        }
     }
     max-width: 374px;
     height: 444px;
 }
 
-.card-container .card:nth-child(2){
+.card-container .card:nth-child(2) {
     background-color: var(--card-secondary);
     background-image: url("/assets/img/skills/bg-effectV3.svg");
     h1,
     span,
-    p{
-    color: var(--card-secondary-text);
+    p {
+        color: var(--card-secondary-text);
     }
 }
 .card-container .card:nth-child(3) {
@@ -62,4 +61,22 @@
     }
 }
 
-
+.skill {
+    padding: 40px;
+    .skill-icon {
+        background-color: #f7f7ff;
+        color: var(--primary);
+        font-size: 32px;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    .skill-text {
+        h1 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        p {
+            color: var(--grey-text);
+        }
+    }
+}

@@ -1,7 +1,24 @@
-section{
-    height: 100vh;
+section {
+    //height: 100vh;
 }
 
-img{
-    margin-top: 125px;
+.image-square {
+    width: 80%;
+    position: relative;
+    height: 0;
+    padding-bottom: 80%;
+}
+
+.parent {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.child-right {
+    // background: green;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
 }

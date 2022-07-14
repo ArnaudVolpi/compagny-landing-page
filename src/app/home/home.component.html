@@ -1,36 +1,41 @@
-<section fxLayout="column" fxLayoutAlign="center" fxLayoutGap="10px">
+<section fxLayout="row" fxLayoutAlign="center" fxLayoutGap="10px">
 
-    <div fxLayout="row" fxLayoutAlign="space-around center" fxLayoutAlign.gt-sm="start center">
+    <div fxLayout="column" fxLayoutAlign="center" fxLayoutGap="0px" class="fade">
 
-        <!-- Block Left -->
-        <div fxLayout="column wrap" fxLayoutAlign="start start" fxFlex fxFlex.gt-sm="65" fxLayoutGap.gt-sm="20px">
-            <!-- Title -->
-            <h1>L’agence qui <br>vous accompagne<br> pour <ng-container
-                    *ngFor="let item of textFadeOptions;let i=index">
-                    <span class="text-fade" [ngClass]="{'text-fade-active': i==countTextFade}">
-                        {{item}}</span>
-                </ng-container>
-            </h1>
-            <!-- Subtext -->
-            <div fxLayout="row" fxLayoutAlign="end center">
+
+        <h1 class="m-0">L’agence qui vous accompagne<br>
+        </h1>
+
+
+        <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px">
+
+
+            <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="30px" fxFlex fxFlex.gt-sm="50"
+                style="text-align: center;">
+
+                <h1 class="title-second-part">pour
+                    <ng-container *ngFor="let item of textFadeOptions;let i=index">
+                        <span class="text-fade" [ngClass]="{'text-fade-active': i==countTextFade}">
+                            {{item}}
+                        </span>
+                    </ng-container>
+                </h1>
+
                 <p>Création d’application web, développement d’outils digitaux et d’applications mobiles, nous
                     accompagnons
                     les professionnels qui désirent gagner en visilité, prroductivité et efficacité.</p>
+
+                <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="30px">
+                    <a href="#"> <button class="btnV2  btnV2-rounded  btnV2XL btn-primary ">Nous contacter</button></a>
+                    <a href="#layxo"> <button class="btnV2  btnV2-rounded  btnV2XL btnV2-outline "> Notre
+                            agence</button></a>
+                </div>
+
             </div>
-            <!-- Btn -->
-            <button>Notre Agence</button>
-        </div>
 
-        <!-- Block Right -->
-        <div fxHide fxShow.gt-sm fxFlex="35" fxLayout="row" fxLayoutAlign="flex-end center">
-            <!-- Logo -->
-            <img src="assets/logo/logo.svg" alt="logo" width="50%">
         </div>
-
 
     </div>
-
-
 
 
 </section>

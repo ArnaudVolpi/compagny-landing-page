@@ -1,31 +1,44 @@
-<section fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="10px">
+<section fxLayout="row" fxLayoutAlign="space-between flex-end" fxLayoutGap="30px" id="layxo">
 
-    <!-- Block Left -->
-    <div fxLayout="column" fxLayoutAlign="start start" fxFlex fxFlex.gt-sm="50">
-        <h6 class="section-header">Notre Agence</h6>
-        <h1 class="section-title">Meildo, votre agence <br>sur Lyon</h1>
-        <p class="section-text">
-            Meildo est une agence de développement indépendande lyonnaise qui conçoit des solutions numériques sur
-            mesure, notamment
-            à travers la création d’applications web et mobile.
-        </p>
-        <p class="section-text">
-            Nous accompagnons nos clients dans leurs besoins et transitions numériques, avec notamment le développement
-            de solutions personnalisées et sur mesures afin de se conformer au mieux à leurs problématiques métiers.
-        </p>
-        <p class="section-text">
-            Fraichement crée par trois jeunes ingénieurs diplomés de la filière Informatique par alternance de l’école
-            Polytech Lyon, Meildo est une jeune entreprise dynamique et ambitieuse spécialisée dans le développement web
-            et mobile qui est continuellement à la recherche de nouveaux défis à résoudre.
-        </p>
+    <div class="parent">
+
+        <!-- Block Left -->
+        <div fxLayout="column" fxLayoutAlign="start start" fxFlex fxFlex.gt-sm="50">
+            <h6 class="section-header">Notre Agence</h6>
+            <h1 class="section-title">Layxo, votre agence <br>sur Lyon</h1>
+            <p class="section-text">
+                Layxo est une agence de développement indépendande lyonnaise qui conçoit des solutions numériques
+                sur
+                mesure, notamment
+                à travers la création d’applications web et mobile.
+            </p>
+            <p class="section-text">
+                Nous accompagnons nos clients dans leurs besoins et transitions numériques, avec notamment le
+                développement
+                de solutions personnalisées et sur mesures afin de se conformer au mieux à leurs problématiques
+                métiers.
+            </p>
+            <p class="section-text">
+                Fraichement crée par trois jeunes ingénieurs diplomés de la filière Informatique par alternance de
+                l’école
+                Polytech Lyon, Layxo est une jeune entreprise dynamique et ambitieuse spécialisée dans le
+                développement web
+                et mobile qui est continuellement à la recherche de nouveaux défis à résoudre.
+            </p>
+        </div>
+
+        <!-- / Block Left -->
+
+        <!-- Block Right -->
+        <div fxFlex fxFlex.gt-sm="50" fxLayout="row" fxLayoutAlign="center flex-end" fxHide fxShow.gt-sm
+            class="child-right">
+
+            <div class="image-square img-rounded"
+                [style.background-image]="'url(https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)'">
+
+            </div>
+
+        </div>
+        <!-- / Block Right -->
     </div>
-
-    <!-- / Block Left -->
-
-    <!-- Block Right -->
-    <div fxFlex fxFlex.gt-sm="50" fxLayout="row" fxLayoutAlign="center" fxHide fxShow.gt-sm>
-        <img src="assets/img/about.png" alt="aboutImg" width="80%">
-    </div>
-    <!-- / Block Right -->
-
 </section>
