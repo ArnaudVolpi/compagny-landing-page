@@ -132,9 +132,13 @@ button.btn-primary {
 }
 button.btn-secondary {
     background-color: var(--secondary);
+    border: 1px solid var(--secondary);
+    color: #fff !important;
 }
 button.btn-thirdary {
     background-color: var(--thirdary);
+    border: 1px solid var(--thirdary);
+    color: #fff !important;
     color: #fff !important;
 }
 

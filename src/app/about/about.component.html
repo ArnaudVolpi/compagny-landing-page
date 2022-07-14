@@ -4,21 +4,21 @@
 
         <!-- Block Left -->
         <div fxLayout="column" fxLayoutAlign="start start" fxFlex fxFlex.gt-sm="50">
-            <h6 class="section-header">Notre Agence</h6>
-            <h1 class="section-title">Layxo, votre agence <br>sur Lyon</h1>
-            <p class="section-text">
+            <h6 class="section-header" ngsReveal>Notre Agence</h6>
+            <h1 class="section-title" ngsReveal>Layxo, votre agence <br>sur Lyon</h1>
+            <p class="section-text" [ngsReveal]="{ delay:500}">
                 Layxo est une agence de développement indépendande lyonnaise qui conçoit des solutions numériques
                 sur
                 mesure, notamment
                 à travers la création d’applications web et mobile.
             </p>
-            <p class="section-text">
+            <p class="section-text" [ngsReveal]="{ delay:700}">
                 Nous accompagnons nos clients dans leurs besoins et transitions numériques, avec notamment le
                 développement
                 de solutions personnalisées et sur mesures afin de se conformer au mieux à leurs problématiques
                 métiers.
             </p>
-            <p class="section-text">
+            <p class="section-text" [ngsReveal]="{ delay:900}">
                 Fraichement crée par trois jeunes ingénieurs diplomés de la filière Informatique par alternance de
                 l’école
                 Polytech Lyon, Layxo est une jeune entreprise dynamique et ambitieuse spécialisée dans le
@@ -33,7 +33,7 @@
         <div fxFlex fxFlex.gt-sm="50" fxLayout="row" fxLayoutAlign="center flex-end" fxHide fxShow.gt-sm
             class="child-right">
 
-            <div class="image-square img-rounded"
+            <div class="image-square img-rounded" [ngsReveal]="{ delay:500}"
                 [style.background-image]="'url(https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)'">
 
             </div>

@@ -3,7 +3,7 @@
     <div fxLayout="column" fxLayoutAlign="center" fxLayoutGap="0px" class="fade">
 
 
-        <h1 class="m-0">L’agence qui vous accompagne<br>
+        <h1 class="m-0" ngsReveal>L’agence qui vous accompagne<br>
         </h1>
 
 
@@ -21,11 +21,12 @@
                     </ng-container>
                 </h1>
 
-                <p>Création d’application web, développement d’outils digitaux et d’applications mobiles, nous
+                <p [ngsReveal]="{ delay:500}">Création d’application web, développement d’outils digitaux et
+                    d’applications mobiles, nous
                     accompagnons
                     les professionnels qui désirent gagner en visilité, prroductivité et efficacité.</p>
 
-                <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="30px">
+                <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="30px" [ngsReveal]="{ delay:800}">
                     <a href="#"> <button class="btnV2  btnV2-rounded  btnV2XL btn-primary ">Nous contacter</button></a>
                     <a href="#layxo"> <button class="btnV2  btnV2-rounded  btnV2XL btnV2-outline "> Notre
                             agence</button></a>
