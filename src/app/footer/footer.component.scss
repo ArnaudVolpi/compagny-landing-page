@@ -1,27 +1,33 @@
-footer{
+footer {
     padding: 20px;
-    a{
+    a {
         color: var(--section-title);
         text-decoration: none;
         font-size: 14px;
         font-weight: 600;
         margin: 10px 0px;
+        i {
+            margin-right: 5px;
+        }
     }
 
-    p,.sub-footer a{
+    p,
+    .sub-footer a {
         color: var(--section-text);
+    }
+
+    .external-link:hover {
+        color: #fff;
     }
 }
 
 // Responsive -> Desktop
 @media only screen and (min-width: 960px) {
-
-    footer{
+    footer {
         padding: 20px 150px;
-  
-    .links {
-     margin-top: 30px;
-    }
-}
 
+        .links {
+            margin-top: 30px;
+        }
+    }
 }

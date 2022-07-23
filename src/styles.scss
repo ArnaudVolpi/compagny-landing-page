@@ -68,7 +68,20 @@ body {
 .text-center {
     text-align: center;
 }
-
+.external-link {
+    transition: all 0.2s ease-in-out 0s;
+    padding: 2px 3px;
+    text-decoration: none;
+    color: var(--section-text);
+    box-shadow: var(--primary) 0px -1px 0px inset;
+}
+.external-link:hover {
+    color: #fff;
+    box-shadow: var(--primary) 0px -33px 0px 0px inset;
+}
+.external-link-hidden {
+    box-shadow: var(--primary) 0px 0px 0px inset;
+}
 // Button
 button:hover {
     cursor: pointer;

@@ -14,6 +14,8 @@ import { AtoutsComponent } from './atouts/atouts.component';
 import { PostsComponent } from './posts/posts.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { LandingComponent } from './landing/landing.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { FooterComponent } from './footer/footer.component';
     AtoutsComponent,
     PostsComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    NotFoundComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,
