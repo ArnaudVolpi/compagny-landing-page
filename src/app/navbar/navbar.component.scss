@@ -1,5 +1,4 @@
 .nav-wrap {
-    // background-color: var(--primary);
     padding: 40px 150px 0px 150px;
 }
 .nav {
@@ -55,14 +54,32 @@ button {
     font-size: 17px;
 }
 
+// Responsive -> Desktop
+@media only screen and (min-width: 960px) {
+    .nav-wrap {
+        // background-color: var(--primary);
+        padding: 40px 150px 0px 150px;
+    }
+}
+// Responsive -> Mobile
 @media (max-width: 600px) {
     .nav-wrap {
-        padding: 0px;
+        padding: 30px;
+    }
+    .nav-btn {
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        z-index: 999;
+    }
+    .nav-links {
+        z-index: 999;
     }
 
     .nav > .nav-btn > label:hover,
     .nav #nav-check:checked ~ .nav-btn > label {
-        background-color: rgba(0, 0, 0, 0.3);
+        // background-color: rgba(0, 0, 0, 0.3);
     }
 
     .nav > .nav-btn > label > span {
@@ -80,13 +97,15 @@ button {
         height: 0px;
         transition: all 0.3s ease-in;
         overflow-y: hidden;
-        top: 50px;
+        overflow-x: hidden;
+        top: 80px;
         left: 0px;
     }
 
     .nav > .nav-links > a {
         display: block;
         width: 100%;
+        color: #fff;
     }
 
     .nav > #nav-check:not(:checked) ~ .nav-links {

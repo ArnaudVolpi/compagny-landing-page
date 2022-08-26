@@ -4,7 +4,7 @@ section {
 }
 
 .skill {
-    padding: 40px;
+    padding: 20px 0px;
     .skill-icon {
         background-color: #f7f7ff;
         color: var(--primary);
@@ -22,5 +22,11 @@ section {
             margin-top: 8px;
             line-height: 1.5;
         }
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .skill {
+        padding: 40px;
     }
 }

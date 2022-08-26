@@ -96,17 +96,22 @@ section {
 
     // VErsion 2
     .fade {
-        h1,
-        p {
-            text-align: center;
+        h1 {
+            text-align: left;
         }
         p {
             color: var(--grey-text);
+            text-align: justify;
+            font-size: 14x;
         }
-
+        h1 {
+            font-size: 32px;
+        }
         h1.title-second-part {
-            margin-left: -30vw;
+            font-size: 32px;
+            margin-left: -65vw;
             margin-top: 0;
+            overflow-wrap: anywhere;
         }
     }
 }
@@ -117,6 +122,26 @@ section {
         padding: 150px 50px;
     }
 
+    .fade {
+        h1,
+        p {
+            text-align: center !important;
+        }
+        h1.title-second-part {
+            margin-left: -30vw !important;
+            margin-top: 0 !important;
+            font-size: 35px;
+        }
+
+        p {
+            color: var(--grey-text);
+            text-align: center;
+            font-size: 14x;
+        }
+        h1 {
+            font-size: 35px;
+        }
+    }
     h1 {
         font-size: 70px !important;
     }

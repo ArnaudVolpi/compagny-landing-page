@@ -26,11 +26,21 @@
                     accompagnons
                     les professionnels qui désirent gagner en visilité, prroductivité et efficacité.</p>
 
-                <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="30px" [ngsReveal]="{ delay:800}">
-                    <a href="mailto:contact@layxo.com?subject=[Layxo]%20Prise%20de%20contact">
+                <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="30px" [ngsReveal]="{ delay:800}" fxHide
+                    fxShow.gt-sm>
+                    <a href="mailto:contact@layxo.com?subject=[Layxo]%20Prise%20de%20contact" fxHide fxShow.gt-sm>
                         <button class="btnV2 btnV2-rounded btnV2XL btn-primary ">Nous contacter</button>
                     </a>
-                    <a href="#layxo"> <button class="btnV2  btnV2-rounded  btnV2XL btnV2-outline "> Notre
+                    <a href="#layxo"> <button class="btnV2  btnV2-rounded  btnV2XL btnV2-outline " fxHide fxShow.gt-sm>
+                            Notre
+                            agence</button></a>
+                </div>
+
+                <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="30px" [ngsReveal]="{ delay:800}">
+                    <a href="mailto:contact@layxo.com?subject=[Layxo]%20Prise%20de%20contact" fxHide.gt-sm>
+                        <button class="btnV2 btnV2-rounded btnV2 btn-primary ">Nous contacter</button>
+                    </a>
+                    <a href="#layxo"> <button class="btnV2  btnV2-rounded  btnV2 btnV2-outline " fxHide.gt-sm> Notre
                             agence</button></a>
                 </div>
 

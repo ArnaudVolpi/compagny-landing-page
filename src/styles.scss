@@ -68,6 +68,12 @@ body {
 .text-center {
     text-align: center;
 }
+.m-0 {
+    margin: 0px;
+}
+.mb-0 {
+    margin-bottom: 0px;
+}
 .external-link {
     transition: all 0.2s ease-in-out 0s;
     padding: 2px 3px;
@@ -101,7 +107,7 @@ button.btn-outline:hover {
 // Section
 
 section {
-    // min-height: 100vh;
+    padding: 20px 30px;
 }
 .section-header {
     color: var(--primary);
@@ -112,8 +118,8 @@ section {
 
 .section-title {
     color: var(--section-title);
-    font-size: 48px;
-    line-height: 68px;
+    font-size: 32px;
+    line-height: 42px;
     font-weight: bold;
     margin-top: -30px;
     margin-bottom: 0px;
@@ -198,6 +204,10 @@ button.btnV2-rounded {
 @media only screen and (min-width: 960px) {
     section {
         padding: 150px 200px;
+    }
+    .section-title {
+        font-size: 48px;
+        line-height: 68px;
     }
     .py-0 {
         padding: 0px 200px;
